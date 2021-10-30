@@ -20,3 +20,12 @@ def logintutor(request):
 
 def loginstu(request):
     return render(request, "main/loginpagestud.html")
+
+def studentsignup(request):
+    return render(request, "main/studentsignup.html")
+
+def tutorsignup(request):
+    return render(request, "main/tutorsignup.html")
+
+def list(request):
+    return render(request, "main/list.html")

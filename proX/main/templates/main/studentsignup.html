@@ -1,0 +1,40 @@
+{% extends "main/templatesignup.html" %}
+<style>
+
+
+</style>
+
+<body>
+{% block body %}
+<br>
+<div class="w3-margin w3-jumbo white">Sign up for Student</div>
+
+<div class="a">
+<form>
+    <div style="margin-right: 3.5%">
+    <h5 class="w3-padding-1">First Name:</h5>
+    </div>
+    <input type="text" id="First Name" name="First Name"><br>
+
+    <div style="margin-right: 4%">
+    <h5 class="w3-padding-1">Surname:</h5>
+    </div>
+    <input type="text" id="Surname" name="Surname"><br>
+    
+    <div style="margin-right: 3.5%">
+    <h5 class="w3-padding-1">Nickname:</h5>
+    </div>
+    <input type="text" id="Nickname" name="Nickname"><br>
+    
+    <div style="margin-right: 4.5%">
+    <h5 class="w3-padding-1">Degree:</h5>
+    </div>
+    <input type="text" id="Degree" name="Degree"><br>
+    <br>
+    <div style="margin-left: 7%">
+    <input type="submit" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-green   w3-blue" value="Register">
+    </div>
+</form>
+</div>
+{% endblock %}
+</body>
