@@ -1,0 +1,38 @@
+{% extends "main/templatesignup.html" %}
+<style>
+   
+div.l {
+    text-align: left;
+  }
+div.a {
+    text-align: center;
+  }
+  
+</style>
+
+    
+{% block body %}
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="a">
+<img style="background: lightskyblue;" >    
+<img style="width:250px;height:250px;" src="static/images/kainao.jpg" alt="ninja">
+<h1> STUDENT </h1>
+<form>
+    <div style="margin-right: 10%">
+    <h5 class="w3-padding-1">Username:</h5>
+    </div>
+    <input type="text" id="username" name="username"><br>
+    <div style="margin-right: 10%">
+    <h5 class="w3-padding-1">Password:</h5>
+    </div>
+    <input type="password" id="pwd" name="pwd"><br>
+    <br>
+    <input type="submit" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-green   w3-blue" value="Sign in">
+  </form>
+</div>
+</body>
+{% endblock %}
