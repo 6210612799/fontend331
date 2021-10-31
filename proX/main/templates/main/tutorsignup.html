@@ -5,42 +5,63 @@
 </style>
 
 <body>
-{% block body %}
-<br>
-<div class="w3-margin w3-jumbo white">Sign up for Tutor</div>
-
-<div class="a">
-<form>
-    <div style="margin-right: 3.5%">
-    <h5 class="w3-padding-1">First Name:</h5>
-    </div>
-    <input type="text" id="first Name" name="First Name"><br>
-
-    <div style="margin-right: 4%">
-    <h5 class="w3-padding-1">Surname:</h5>
-    </div>
-    <input type="text" id="surname" name="Surname"><br>
-    
-    <div style="margin-right: 3.5%">
-    <h5 class="w3-padding-1">Nickname:</h5>
-    </div>
-    <input type="text" id="nickname" name="Nickname"><br>
-    
-    <div style="margin-right: 5.5%">
-    <h5 class="w3-padding-1">Age:</h5>
-    </div>
-    <input type="number" min="1" step="1" id="age" name="Age"><br>
-    
-    <form action="/action_page.php">
-    <div style="margin-right: 5%">
-    <h5 class="w3-padding-1">Profile:</h5></div>
-    <textarea name="message" style="margin-left: 4%" rows="10" cols="30"></textarea>
+    {% block body %}
     <br>
-    <br>
-    <div style="margin-left: 10.5%">
-    <input type="submit" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-green   w3-blue" value="Register">
+
+    <div style="margin-top: 1%;">
+    <div class="row">
+        <div class="column" style="background-color:rgb(94, 198, 240);">
+            <div class="a">
+            <img style="width:520px;height:520px;margin-top: 22.25% ;" src="static/images/only.png" alt="ninja">        </div>
+            </div>
+        <div class="column" style="background-color:rgb(212, 252, 253);">
+            <form>
+
+                <h1 class="w3-jumbo">Sign up for Tutor</h1>
+
+                <h5 class="w3-padding-1">First Name:</h5>
+
+
+
+                <input type="text" id="first Name" name="First Name" placeholder="First Name" ><br>
+
+
+                <h5 class="w3-padding-1">Surname:</h5>
+
+
+
+                <input type="text" id="surname" name="Surname" placeholder="Surname"><br>
+
+
+                <h5 class="w3-padding-1">Nickname:</h5>
+
+
+
+                <input type="text" id="nickname" name="Nickname" placeholder="Nickname"><br>
+
+
+
+                <h5 class="w3-padding-1">Age:</h5>
+
+
+
+
+                <input type="number" min="1" step="1" id="age" name="Age"><br>
+
+                <form action="/action_page.php">
+                    
+                        <h5 class="w3-padding-1">Profile:</h5>
+                   
+                    <input type="text" id="profile" name="Prolife"><br>
+                    <br>
+                    
+                        <input type="submit"
+                            class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-green   w3-blue"
+                            value="Register">
+                    </div>
+                </form>
+        </div>
     </div>
-</form>
-</div>
-{% endblock %}
+    </div>
+    {% endblock %}
 </body>
