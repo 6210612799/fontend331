@@ -8,16 +8,38 @@
     {% block body %}
     <br>
 
-    <div style="margin-top: 1%;">
+    <div style="margin-bottom: 5em;">
     <div class="row">
-        <div class="column" style="background-color:rgb(94, 198, 240);">
+        <div class="column" style="background-color:rgb(255, 255, 255);">
             <div class="a">
-            <img style="width:520px;height:520px;margin-top: 22.25% ;" src="static/images/only.png" alt="ninja">        </div>
+                
+            <img style="width:520px;height:520px;margin-top: 20% ;" src="static/images/only.png" alt="ninja">        </div>
             </div>
+        
         <div class="column" style="background-color:rgb(212, 252, 253);">
             <form>
 
                 <h1 class="w3-jumbo">Sign up for Tutor</h1>
+
+                <h5 class="w3-padding-1">Username:</h5>
+
+
+
+                <input type="text" id="username" name="Username" placeholder="Username" ><br>
+
+
+                <h5 class="w3-padding-1">Password:</h5>
+
+
+
+                <input type="text" id="password" name="Password" placeholder="Password" ><br>
+
+                <h5 class="w3-padding-1">Conferm Password:</h5>
+
+
+
+                <input type="text" id="password" name="Password" placeholder="Conferm Password" ><br>
+
 
                 <h5 class="w3-padding-1">First Name:</h5>
 
@@ -60,8 +82,9 @@
                             value="Register">
                     </div>
                 </form>
+                
         </div>
     </div>
-    </div>
+    
     {% endblock %}
 </body>
