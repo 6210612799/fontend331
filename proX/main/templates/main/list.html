@@ -1,4 +1,17 @@
 {% extends "main/layout.html" %}
+<style>
+        label {
+            float: left;
+        }
+          
+        span {
+            display: block;
+            overflow: hidden;
+            padding: 0px 4px 0px 6px;
+        }
+
+
+</style>
 
 {% block title %}
 
@@ -10,24 +23,82 @@
 <br>
 <div class="w3-margin w3-jumbo white"> Filter  </div>
 <form>
-    <div style="margin-left: 3.5%">
-    <label style ="margin-right: 0.5%" class="w3-padding-1">Course</label> 
-    <input type="text" id="course" name="Course">
-    </div>
-    <br>
-    <div style="margin-left: 3.5%">
-    <label style ="margin-right: 0.5%" class="w3-padding-1">Name</label> 
-    <input type="text" id="name" name="Name">
-    </div>
-    <br>
-    <div style="margin-left: 3.5%">
-    <label style ="margin-right: 0.5%" class="w3-padding-1">Location</label> 
-    <input type="text" id="location" name="Location">
-    </div>
-    <br>
-    
+    <label style="margin-left:5em;">Course</label>
+    <span><input type="text" id="course" name="Course" placeholder="Course" style="margin-left:5em;"><br></span>
 
+    <label style="margin-left:5em;">Name</label>
+    <span><input type="text" id="name" name="Name" placeholder="Name" style="margin-left:5.5em;"><br></span>
     
+    <label style="margin-left:5em;">Location</label>
+    <span><input type="text" id="location" name="Location" placeholder="Location" style="margin-left:4.5em;"><br></span>
+    <br>
+    
+    <div class="container">
+    <div class="row justify-content-md-left">
+    <div class="col-md-auto" style="margin-left:-33.5em; margin-top:0.5em">
+    <label style="margin-left:5em;">Gender</label>
+    </div>
+    <div class="col-md-auto" style="margin-left:4em;">
+    <span><select style="width:7em;" class="form-select" aria-label="Default select example">
+        <option selected>Gender</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+    </select><br></span>
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="row justify-content-md-left">
+    <div class="col-md-auto" style="margin-left:-33.5em; margin-top:0.5em">
+    <label style="margin-left:5em;">Cost</label>
+    </div>
+    <div class="col-md-auto" style="margin-left:5.25em;">
+    <span><select style="width:6em;" class="form-select" aria-label="Default select example">
+        <option selected>Cost฿</option>
+        <option value="1">1000฿-2000฿</option>
+        <option value="2">2001฿-3000฿</option>
+        <option value="3">3001฿-4000฿</option>
+        <option value="4">4001฿-5000฿</option>
+    </select><br></span>
+    </div>
+    </div>
+    </div>
+
+    <fieldset id="c-group">
+    <label style="margin-left:5em; margin-top:0.5em">Day</label>
+    <label for="c1" style="margin-left:7em;">
+      <input type="checkbox" id="c1" name="c-group">
+      <span class="label-text" >SUN</span>
+    </label>
+    <label for="c2" style="margin-left:1em;">
+      <input type="checkbox" id="c2" name="c-group">
+      <span class="label-text" >MON</span>
+    </label>
+    <label for="c3" style="margin-left:1em;">
+      <input type="checkbox" id="c3" name="c-group">
+      <span class="label-text" >TUE</span>
+    </label>
+    <label for="c4" style="margin-left:1em;">
+      <input type="checkbox" id="c4" name="c-group">
+      <span class="label-text" >WED</span>
+    </label>
+    <label for="c5" style="margin-left:1em;">
+      <input type="checkbox" id="c5" name="c-group">
+      <span class="label-text" >THU</span>
+    </label>
+    <label for="c6" style="margin-left:1em;">
+      <input type="checkbox" id="c6" name="c-group">
+      <span class="label-text" >FRI</span>
+    </label>
+    <label for="c7" style="margin-left:1em;">
+      <input type="checkbox" id="c7" name="c-group">
+      <span class="label-text" >SAT</span>
+    </label>
+    </fieldset>
+    <br>
+    <input type="submit" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-green   w3-blue" value="Search" style="margin-left:5.5em;">
+
 
 
 </form>
