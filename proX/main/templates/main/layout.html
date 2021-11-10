@@ -40,7 +40,7 @@ div.c {
     <a href="/about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"style="margin-left:-4.5em;">&#128101;About</a>
 
     {% if  request.user.is_authenticated %}
-                <h3 style="margin-right:5em;"><b>Welcome, {{request.user.username}}</b></h3>
+                <h3 style="margin-left:65em;"><b>Welcome, {{request.user.username}}</b></h3>
     {% else %}
     <div class="c">
       <div style="margin-top:-1em;" >
@@ -48,8 +48,14 @@ div.c {
       <a href="/signup"><input type="button"  value="sign up"></a></div>
     </div>
     {% endif %}
-  
+    <ul>
+        <li style="color:white">Username: {{ request.user.username }}</li>
+        <li style="color:white">Password: {{ request.user.password }}</li>
+    </ul>
   </div>
+  
+  
+  
   {% block body %}
   <div style="margin-bottom: 5em;"></div>
   {% endblock %}

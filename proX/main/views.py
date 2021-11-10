@@ -39,7 +39,6 @@ def tutorsignup(request):
 def list(request):
     return render(request, "main/list.html")
 
-
 def register(request):
         return render(request, '../templates/users/register.html')
 
